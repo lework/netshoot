@@ -52,9 +52,6 @@ RUN set -ex \
     websocat
 
 
-# apparmor issue #14140
-RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump
-
 # Installing ctop - top-like container monitor
 RUN wget https://github.com/bcicen/ctop/releases/download/v0.7.1/ctop-0.7.1-linux-amd64 -O /usr/local/bin/ctop && chmod +x /usr/local/bin/ctop
 
